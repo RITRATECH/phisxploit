@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Klik</title>
+</head>
+<body>
+  <h2>📊 Statistik Klik per Link</h2>
+  <table border="1" cellpadding="5">
+    <tr>
+      <th>No</th>
+      <th>Shortcode</th>
+      <th>Jenis</th>
+      <th>Target URL</th>
+      <th>Total Klik</th>
+      <th>IP Unik</th>
+      <th>Last Click</th>
+      <th>Link</th>
+    </tr>
+    {% for row in stats %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ row.shortcode }}</td>
+      <td>{{ row.source }}</td>
+      <td>{{ row.url }}</td>
+      <td>{{ row.clicks }}</td>
+      <td>{{ row.unique_ips }}</td>
+      <td>{{ row.last_click }}</td>
+      <td><a href="/{{ row.shortcode }}" target="_blank">🔗</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

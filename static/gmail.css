@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #202124;
+  color: #e8eaed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box {
+  background-color: #303134;
+  padding: 40px;
+  border-radius: 8px;
+  width: 360px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.google-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #bdc1c6;
+}
+
+form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #5f6368;
+  background-color: #202124;
+  color: #e8eaed;
+  font-size: 14px;
+}
+
+.forgot {
+  font-size: 14px;
+  text-align: left;
+  display: block;
+  margin-bottom: 20px;
+  color: #8ab4f8;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.info {
+  font-size: 12px;
+  color: #9aa0a6;
+  margin-bottom: 20px;
+}
+
+.info a {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create {
+  color: #8ab4f8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.create:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #8ab4f8;
+  border: none;
+  color: #202124;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+  color: #9aa0a6;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer select {
+  background-color: #202124;
+  color: #e8eaed;
+  border: 1px solid #5f6368;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

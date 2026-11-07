@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 80px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.left {
+    max-width: 400px;
+}
+
+.logo {
+    color: #1877f2;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 22px;
+    color: #1c1e21;
+}
+
+.right {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 360px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-form button[type="submit"] {
+    background-color: #1877f2;
+    color: white;
+}
+
+.login-form .forgot {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.login-form hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.login-form .create {
+    background-color: #42b72a;
+    color: white;
+}
+
+.bottom-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #1c1e21;
+}

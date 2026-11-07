@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #181818;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 5px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.menu li.active,
+.menu li:hover {
+  background-color: #303030;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  width: 300px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #303030;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.create-btn {
+  background-color: #303030;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.bell {
+  font-size: 18px;
+}
+
+.profile {
+  background-color: orange;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.account-section {
+  max-width: 800px;
+}
+
+.email {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #181818;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.card a {
+  color: #3ea6ff;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
